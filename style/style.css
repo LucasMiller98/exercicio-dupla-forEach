@@ -1,0 +1,127 @@
+/* Para tirar a margin e o padding padrões do chrome */
+* {
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: #20a106;
+    color: #f1f1f1;
+}
+header {
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    font-size: 1.3vw;
+    border-bottom: 3px solid #303030;
+    width: 20%;
+}
+main {
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 71vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 310px 200px 400px 310px;
+    margin: 15px auto;
+    outline: none;
+    background: linear-gradient(#303030, #575555, #606060);
+    border-radius: 2rem 1rem;
+    box-shadow: 12px 10px 7px #b9b7b7;
+    color: #f1f1f1;
+    font-size: 1vw;
+    position: relative;
+}
+#h3-title {
+    position: absolute;
+    top: 111px;
+    border-bottom: 2px solid #f1f1f1;
+    transition: border-bottom .3s;
+    transition: transform .5s;
+}
+#h3-title:hover {
+    border-bottom: 2px solid #31991c;
+    transform: translateY(-5px);
+}
+#question {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    bottom: 30px;
+    font-size:1.5em;
+}
+ol {
+    padding: 90px 0;
+    width: 70%;
+    position: relative;
+    bottom: 30px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    color: #f1f1f1;
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+button {
+    color: #f1f1f1;
+    background: none;
+    outline: none;
+    border: 0;
+    font-family: 'Pangolin', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.1vw;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 7px 0;
+    width: 73%;
+    transition: transform .7s;
+}
+button:hover {
+    border-bottom: 1.5px solid #f1f1f1;
+    transform: translateY(-5px);
+}
+input{
+    transition: border-bottom .3s;
+    color: #f1f1f1;
+    background: none;
+    padding: 7px 0;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 2px solid #f1f1f1;
+    font-family: 'Kufam', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.1vw;
+    outline: none;
+}
+input:focus {
+    border-bottom: 3px solid #21350a;
+}
+input::placeholder {
+    color: #868686;
+}
+footer {
+    font-family: 'Kufam', Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    font-weight: 100;
+    font-size: 1.2vw;
+    background: linear-gradient(#303030, #575555, #606060);
+    padding: 170px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    margin-top: 70px;
+}
+footer section h3, p {
+    margin: 20px 155px;
+}
+footer #date-hours {
+    border-left: 3px dotted #f1f1f1;
+}
